@@ -9,6 +9,6 @@ import java.util.Locale;
 public class StringService {
     // FIXME: add javadoc
     public String toUpperCase(final String string) {
-        return string.toUpperCase();
+        return string == null ? null : string.toUpperCase(Locale.getDefault());
     }
 }
